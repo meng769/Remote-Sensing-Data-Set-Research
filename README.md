@@ -6,14 +6,13 @@
   - SEN1-2数据集
   - SARBuD 1.0 数据集
 - 非遥感数据集
-  - REMD数据集
   - Brown数据集
   - MD-syn数据集 
 ## 遥感数据集
 ### MultiResSAR数据集
 MultiResSAR是一个大规模、多源、多分辨率、多场景的SAR与光学影像配准数据集。
 
-该数据集包含10,850对光学和SAR图像，覆盖了来自四颗商业卫星的SAR数据，分辨率从0.16m到10m不等。
+该数据集包含10,850对光学和SAR图像，覆盖了来自四颗商业卫星的SAR数据，分辨率: 0.16m~10m。
 
 场景类型包括城市、农村、平原、丘陵、山区和水域。
 
@@ -31,7 +30,9 @@ MultiResSAR数据集下载链接: https://github.com/betterlll/Multi-Resolution-
 
 数据集中的每对图像块的中心像素在三维空间中的位置被精确匹配，精度通常在 几米范围内。
 
-预览图片: <img width="370" alt="d189a458f33a5fec98a59bb32627528" src="https://github.com/user-attachments/assets/703db1ba-1964-4d98-9279-7b3e76a0d4ca" />
+预览图片: 
+
+<img width="370" alt="d189a458f33a5fec98a59bb32627528" src="https://github.com/user-attachments/assets/703db1ba-1964-4d98-9279-7b3e76a0d4ca" />
 <img width="375" alt="7c2240dd93c2bb4b1658736f562e7f2" src="https://github.com/user-attachments/assets/d954c18b-a866-433e-83fb-6f7638323f84" />
 
 SARptical数据集下载链接: https://github.com/zhu-xlab/SARptical
@@ -47,7 +48,9 @@ SEN1-2数据集由小图组成,但可按照一定的办法拼成大图。
 
 SAR和光学的GSD: 10m/pix
 
-预览图片: <img width="850" alt="392be66bab033c4046d890336774b9f" src="https://github.com/user-attachments/assets/5df37b7d-0a48-43ea-9c87-3f0ddeafbbac" />
+预览图片: 
+
+<img width="850" alt="392be66bab033c4046d890336774b9f" src="https://github.com/user-attachments/assets/5df37b7d-0a48-43ea-9c87-3f0ddeafbbac" />
 
 SEN1-2数据集下载链接: https://dataserv.ub.tum.de/index.php/s/m1436631
 
@@ -62,33 +65,35 @@ SARBuD 1.0 数据集基于 GF-3 卫星的精细模式单极化 SAR 影像，分�
 
 所有建筑区样本均通过高分辨率光学图像手动标注。
 
-预览图片: ![image](https://github.com/user-attachments/assets/e9625d8e-b8c6-4320-8c41-03bf036c8ea7)
+预览图片: 
+
+![image](https://github.com/user-attachments/assets/e9625d8e-b8c6-4320-8c41-03bf036c8ea7)
 
 SARBuD 1.0 数据集下载链接: https://github.com/CAESAR-Radi/SARBuD
 
 ## 非遥感数据集
-### SEMD数据集
-SEMD数据集是一个包含、语音眼神和动作的数据集，主要用于研究这三者之间的关系。该数据集通过从 YouTube 下载视频并提取面部关键点来构建。
-
-SEMD数据集下载链接: https://github.com/Eddie-Hwang/Speech-Eye-Motion-Dataset
 
 ### Brown数据集
 Brown数据集是一个图像匹配的经典集合，包含了Liberty、NotreDame和Yosemite三个地方的图像。数据集通过三维重建获取特征点信息和匹配关系，常用于图像处理和计算机视觉研究。
 
 Brown数据集由 1024 x 1024 位图 (.bmp) 图像组成，每个图像包含一个 16 x 16 图像块阵列。每个补丁都被采样为 64 x 64 灰度，具有规范的比例和方向。
 
-预览图片: ![image](https://github.com/user-attachments/assets/21667115-ec5a-4bb1-9ac4-cbc0ab81578a)
+预览图片: 
+
+![image](https://github.com/user-attachments/assets/21667115-ec5a-4bb1-9ac4-cbc0ab81578a)
 
 参考文献: https://ieeexplore.ieee.org/document/9850980
 
 ### MD-syn数据集
-MD-syn数据集是由华中科技大学和武汉大学联合创建的多模态图像匹配数据集。它旨在解决跨模态图像匹配中的数据稀缺问题，通过生成模型从RGB图像扩展而来，包含多种模态（如RGB、红外、深度等）和丰富场景。该数据集包含4.8亿对图像，继承了RGB数据的匹配标签和多样性
+MD-syn数据集是由华中科技大学和武汉大学联合创建的多模态图像匹配数据集。它旨在解决跨模态图像匹配中的数据稀缺问题，通过生成模型从RGB图像扩展而来，包含多种模态（如RGB、红外、深度等）和丰富场景。
 
-数据集的图像分辨率未明确提及，但其源数据来自MegaDepth数据集，该数据集的图像分辨率通常为 1024×768像素。
+MD-syn数据集包含七种模态类型，包括RGB、红外、深度、事件、法线图、草图和绘画，广泛应用于跨模态图像匹配任务，显著提升了模型的泛化能力和零样本性能。
 
-数据集的幅宽（图像宽度）未明确提及，但基于MegaDepth数据集的图像宽度通常为 1024像素。
+该数据集包含4.8亿对图像，继承了RGB数据的匹配标签和多样性。
 
-MD-syn数据集包含七种模态类型，包括RGB、红外、深度、事件、法线图、草图和绘画。该数据集广泛应用于跨模态图像匹配任务，显著提升了模型的泛化能力和零样本性能。
+数据集的图像分辨率未明确提及，但其源数据来自MegaDepth数据集，该数据集的图像分辨率通常为1024×768像素。
+
+数据集的幅宽（图像宽度）未明确提及，但基于MegaDepth数据集的图像宽度通常为1024像素。
 
 预览图片: ![image](https://github.com/user-attachments/assets/e492e996-8f17-4716-8637-a969e4e66de9)
 
